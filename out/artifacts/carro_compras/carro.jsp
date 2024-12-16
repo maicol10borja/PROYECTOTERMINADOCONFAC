@@ -7,9 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carro de Compras</title>
-    <!-- Vincula Bootstrap desde un CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos adicionales -->
     <style>
         body {
             margin-top: 20px;
@@ -63,10 +61,10 @@
     <div class="text-center">
         <p><a href="<%= request.getContextPath() %>/productos" class="btn btn-info">Seguir Comprando</a></p>
         <p><a href="<%= request.getContextPath() %>/index.html" class="btn btn-primary">Ir al Inicio</a></p>
+        <button onclick="window.print();" class="btn btn-secondary">Imprimir Factura</button>
     </div>
 </div>
 
-<!-- Vincula los scripts de Bootstrap (opcional para funcionalidades dinámicas) -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

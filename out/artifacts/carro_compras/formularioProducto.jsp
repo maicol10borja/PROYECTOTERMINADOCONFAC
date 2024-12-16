@@ -26,10 +26,10 @@
 <body>
 
 <div class="container form-container">
-    <h1 class="text-center">Formulario de Productos - Empresa</h1>
+    <h1 class="text-center">Formulario de el Restaurante - Local</h1>
     <form action="<%=request.getContextPath()%>/productos/form" method="post">
         <div class="form-group">
-            <label for="nombre">Ingrese el nombre del producto:</label>
+            <label for="nombre">Ingrese el nombre del producto que desea ingresar:</label>
             <input type="hidden" name="idProducto" value="<%=productos.getIdProducto()%>">
             <input type="text" id="nombre" name="nombre" class="form-control" value="<%=productos.getNombre() != null ? productos.getNombre() : ""%>" required>
         </div>

@@ -1,32 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manejo de Sesiones</title>
     <!-- Vincula Bootstrap desde un CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Estilos adicionales si son necesarios -->
+    <!-- Estilos adicionales -->
     <style>
         body {
-            margin-top: 20px;
+            background-color: #1e2a3a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ecf0f1;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            color: #f39c12;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+            margin-bottom: 40px;
+        }
+        .alert {
+            background-color: #16a085;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .list-group-item {
+            border-radius: 12px;
+            background-color: #34495e;
+            border: 1px solid #2c3e50;
+            margin-bottom: 15px;
+            padding: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .list-group-item:hover {
+            background-color: #e74c3c;
+            transform: scale(1.05);
+        }
+        .list-group-item a {
+            font-size: 1.4rem;
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .list-group-item a:hover {
+            color: #fff;
+            text-decoration: underline;
+            transform: translateX(10px);
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #34495e;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+        .container br {
+            margin-bottom: 15px;
+        }
+        .btn-link {
+            font-size: 1.3rem;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1 class="text-center">Manejo de Sesiones</h1>
-    <div class="alert alert-info">
-        Esta página permite manejar sesiones para el carrito de compras.
-    </div>
-
+    <h1>Manejo de Sesiones</h1>
     <ul class="list-group">
-        <li class="list-group-item"><a href="/carro_compras/productos" class="btn btn-link">Ver productos</a></li>
+        <li class="list-group-item"><a href="/carro_compras/productos" class="btn btn-link">Ver Menu</a></li>
         <li class="list-group-item"><a href="/carro_compras/login.html" class="btn btn-link">Login</a></li>
-        <li class="list-group-item"><a href="/carro_compras/logout" class="btn btn-link">Logout</a></li>
-        <li class="list-group-item"><a href="/carro_compras/categoria" class="btn btn-link">Ver Categorias</a></li>
-        <li class="list-group-item"><a href="/carro_compras/ver-carro" class="btn btn-link">Ver carro</a></li>
+        <li class="list-group-item"><a href="/carro_compras/categoria" class="btn btn-link">Ver Pedidos en Linea</a></li>
+        <li class="list-group-item"><a href="/carro_compras/ver-carro" class="btn btn-link">Ver Carro</a></li>
+        <li class="list-group-item"><a href="/carro_compras/logout" class="btn btn-link">Cerrar sesion</a></li>
 
     </ul>
 </div>
